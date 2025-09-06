@@ -43,7 +43,7 @@ url = "https://googliyaann.com"
 # print(check_website("https://faxitudegyiuhdjnbis.com"))
 
 if not check_website(url):
-    sender_email = "itestmanoj@gmail.com"
+    sender_email = os.getenv("SENDER_EMAIL")
     subject = "Website is Down"
     body = "warning your website service PING is WARNING PING WARNING - Packet loss = 20%, RTA = 21.84 ms"
     receiver_email = os.getenv("RECEIVER_EMAIL")
